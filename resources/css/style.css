@@ -2,10 +2,14 @@ html{
   font-size:16px;
 }
 
+
 body{
   width: 100%;
 }
 
+a{
+  text-decoration: none;
+}
 
 h1{
   font-size: 3.5rem;
@@ -26,7 +30,7 @@ h3{
   display: none;
 }
 
-.showImg {
+.showElementMoblie {
   display: none;
 }
 
@@ -251,49 +255,52 @@ margin-right:3rem;
 }
 
 @media only screen and (max-width:960px){
-  .generalInfo .subImgCont{
+   .subImgCont{
     width: 50%;
 
   }
 
-  .generalInfo .subInfo{
+   .subInfo{
     width: 50%;
     justify-content: flex-start;
   }
 
-  .generalInfo .subHead{
+   .subHead{
 
     padding: 0;
   }
-  .generalInfo .subjectInfo{
+   .subjectInfo{
     width:50%;
   }
 
-  .generalInfo .subHeads{
+   .subHeads{
     width:50%;
   }
+.videoSection .guest{
+  margin-bottom:0.5rem;
+}
 
 }
 
 @media only screen and (max-width:680px){
-  .generalInfo.campusInfo{
+  .campusInfo{
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
 
   }
 
-  .generalInfo .subHeads{
+   .subHeads{
     width: 100%;
     margin: 1.5rem 0;
     padding: 0 0 0 0.3rem;
   }
 
-  .generalInfo .subImgCont{
+   .subImgCont{
     width: 35%;
   }
 
-  .generalInfo .subjectInfo{
+   .subjectInfo{
     width:100%;
     padding: 0 0 0 0.3rem;
     border-right:0px;
@@ -303,37 +310,45 @@ margin-right:3rem;
     background-color: white;
   }
 
-  .generalInfo .subInfo{
+   .subInfo{
     justify-content: center;
   }
 }
 
 @media only screen and (max-width:480px){
 
-.showImg{
+.showElementMoblie{
   display: inline-block;
 }
-.removeImg{
+.removeMobile{
   display: none;
 }
 
-.generalInfo .subInfo{
+ .subInfo{
   width: 100%;
+  padding: 0;
 }
 
-.generalInfo .subjectInfo{
+ .subjectInfo.removeMobile{
+  display: none;
+}
+.subHeads.removeMobile{
   display: none;
 }
 
-  .generalInfo .subHead{
+   .subHead{
     flex-direction: column;
     margin-bottom: 2.3rem;
     border: 0px;
   }
 
-  .generalInfo .subImgCont{
+   .subImgCont{
     width: 100%;
   margin-bottom: 0.75rem;
+  }
+
+  .subjectInfo video{
+    margin-top: 1.3rem;
   }
 }
 
@@ -381,11 +396,52 @@ margin-right:3rem;
   height: auto;
 }
 
+
+
 @media only screen and (max-width:960px){
   .course{
     width: 47%;
   }
 }
+
+@media only screen and (max-width:680px){
+  .course{
+    width: 80%;
+  }
+  .catalog{
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width:480px){
+
+.learning{
+  background-color: white;
+}
+
+.learning h1{
+  border-top: 1px solid lightgray;
+  padding-bottom: 1.5rem;
+}
+
+.catalog{
+  border-bottom: 1px solid lightgray;
+}
+
+  .mobileCatalog a{
+    display: block;
+    font-size: 2.5rem;
+    background-color: lightgray;
+    margin-bottom: 0.5rem;
+    padding: 1.1rem 2rem ;
+  }
+
+  .mobileCatalog a:last-child{
+    margin-bottom: 4rem;
+  }
+
+}
+
 
 
 footer{
@@ -405,4 +461,21 @@ footer a{
 
 footer p{
   margin-left: 2.5rem;
+}
+
+@media only screen and (max-width:540px){
+  footer a{
+  display: block;
+  clear: both;
+  }
+}
+
+@media only screen and (max-width:480px){
+footer{
+  text-align: center;
+}
+footer p{
+  margin: 0;
+  padding-top: 2rem;
+}
 }
