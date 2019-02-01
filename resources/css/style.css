@@ -19,26 +19,36 @@ a{
 }
 
 p,a,span{
+  font-size:18px;
+  font-size:18px;
   font-size:1.125rem;
 }
 
 h1{
+  font-size:56px;
+  font-size:56px;
   font-size: 3.5rem;
   font-family: 'Acme', sans-serif;
 }
 
 h2{
+  font-size:38.4px;
+  font-size:38.4px;
   font-size: 2.4rem;
   font-family: 'Acme', sans-serif;
 }
 
 h3{
+  font-size:24px;
+  font-size:24px;
   font-size:1.5rem;
   font-family: 'Acme', sans-serif;
 }
 
 .center{
   text-align: center;
+  padding-top:32px;
+  padding-top:32px;
   padding-top: 2rem;
 }
 
@@ -52,9 +62,17 @@ h3{
 
 /*  Fiexd Header */
 header{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  height:64px;
+  height:64px;
   height:4rem;
   background-color:rgb(240,240,240);
   position: fixed;
@@ -64,23 +82,39 @@ header{
 }
 
 header .logo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  margin-left:40px;
+  margin-left:40px;
   margin-left: 2.5rem;
+  height:32px;
+  height:32px;
   height:2rem;
 }
 
 header .logo img{
+  margin-right:3.2px;
+  margin-right:3.2px;
   margin-right:0.2rem;
 }
 
 header li{
   display: inline-block;
+  margin-right:16px;
+  margin-right:16px;
   margin-right:1rem;
 }
 
 header li:last-child{
+  margin-right:40px;
+  margin-right:40px;
   margin-right: 2.5rem;
 }
 
@@ -91,8 +125,14 @@ header li:last-child{
 /*  Responsive Header up to 680px */
 @media only screen and (max-width:680px){
   .menuMobile{
+    display:-webkit-box;
+    display:-ms-flexbox;
     display:flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 100%;
     margin: 0 1rem;
@@ -108,16 +148,23 @@ header li:last-child{
 
 /*  Main Banner section  */
 .mainBanner{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: auto;
   width:100%;
+  background-image: -webkit-linear-gradient(hsl(0, 91.2%, 51.0%), hsl(0, 81.2%, 61.0%),hsl(0, 71.2%, 71.0%),hsl(10, 91.2%, 61%),hsl(23, 91.2%, 51%),hsl(30, 91.2%, 51%),hsl(37, 91.2%, 51%));
   background-image: linear-gradient(hsl(0, 91.2%, 51.0%), hsl(0, 81.2%, 61.0%),hsl(0, 71.2%, 71.0%),hsl(10, 91.2%, 61%),hsl(23, 91.2%, 51%),hsl(30, 91.2%, 51%),hsl(37, 91.2%, 51%));
+  margin-top: 64px;
+  margin-top:64px;
   margin-top: 4rem;
 }
 
 .imgContain {
   width: 60%;
   height: auto;
+  margin: 32px 0 32px 40px;
+  margin:32px 0 32px 40px;
   margin:2rem 0 2rem 2.5rem;
 }
 
@@ -128,10 +175,19 @@ header li:last-child{
 
 .startLearn{
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-right: 7.6%;
+  margin-left: 24px;
+  margin-left:24px;
   margin-left: 1.5rem;
 }
 
@@ -153,14 +209,21 @@ header li:last-child{
   width: 77%;
   text-align: center;
   background-color:hsl(357,100%,29.2%);
+  padding: 16px 0;
+  padding:16px 0;
   padding: 1rem 0;
   margin-top: 3vw;
+  font-size: 20.8px;
+  font-size:20.8px;
   font-size: 1.3rem;
 }
 
 /*  Responsive Main Banner section up to 680px */
 @media only screen and (max-width:760px){
   .mainBanner{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -200,12 +263,15 @@ header li:last-child{
 
 /* Campus Information section */
 .campusInfo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: auto;
   width: 100%;
+  background-image: -webkit-linear-gradient(hsl(38, 91.2%, 51.0%), hsl(38, 81.2%, 61.0%),hsl(38, 71.2%, 71.0%),hsl(58, 91.2%, 67%),hsl(78, 91.2%, 60%),hsl(98, 91.2%, 51%),hsl(119, 87.5%, 40.8%));
   background-image: linear-gradient(hsl(38, 91.2%, 51.0%), hsl(38, 81.2%, 61.0%),hsl(38, 71.2%, 71.0%),hsl(58, 91.2%, 67%),hsl(78, 91.2%, 60%),hsl(98, 91.2%, 51%),hsl(119, 87.5%, 40.8%));
 }
-}
+
 
 .blue{
   background-color: #21549B;
@@ -219,6 +285,7 @@ header li:last-child{
 }
 
 .campusInfo.videoSection{
+  background-image: -webkit-linear-gradient(hsl(217, 74.1%, 36.3%), hsl(217, 64.1%, 46.3%),hsl(217, 54.1%, 56.3%),hsl(167, 55.5%, 54.8%),hsl(115, 25.5%, 64.8%),hsl(64, 24%, 75.8%),hsl(2, 2%, 90%));
   background-image: linear-gradient(hsl(217, 74.1%, 36.3%), hsl(217, 64.1%, 46.3%),hsl(217, 54.1%, 56.3%),hsl(167, 55.5%, 54.8%),hsl(115, 25.5%, 64.8%),hsl(64, 24%, 75.8%),hsl(2, 2%, 90%));
 }
 
@@ -229,10 +296,17 @@ header li:last-child{
 }
 
 .subjectInfo{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   width: 60%;
+  padding-left:40px;
   padding-left: 2.5rem;
+  padding-right:27.2px;
   padding-right: 1.7rem;
   border-right: 1px solid #BF7B0B;
 }
@@ -248,41 +322,60 @@ header li:last-child{
 .subjectInfo img{
   width: 100%;
   height: auto;
+  margin:32px 0;
   margin: 2rem 0;
 }
 
 .subjectInfo video{
   width: 100%;
   height: auto;
+  margin:12.8px 0;
   margin: 0.8rem 0;
 }
 
 .subjectInfo h2{
+  margin-bottom:24px;
   margin-bottom: 1.5rem;
 }
 
 .subjectInfo h3{
+  margin-bottom:16px;
   margin-bottom:1rem;
 }
 
 .subjectInfo p{
+  margin-bottom:32px;
   margin-bottom: 2rem;
 }
 
 .subHeads{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 40%;
+  margin-top:29.6px;
   margin-top: 1.85rem;
+  margin-left:24px;
   margin-left: 1.5rem;
+  margin-right:24px;
   margin-right:1.5rem;
 
 }
 
 .subHead{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding:8px 0;
   padding:0.5rem 0;
+  margin:1.6px 0;
   margin:0.1rem 0;
   background-color: white;
   border: 1px solid #BF7B0B;
@@ -305,15 +398,27 @@ header li:last-child{
 
 .subInfo{
   width:65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align:start;
+  -ms-flex-align:start;
   align-items:flex-start;
+  padding-left:27.2px;
   padding-left:1.7rem;
+  margin-right:8px;
   margin-right: 0.5rem;
 }
 
 .subInfo p{
+  margin:16px 0;
   margin:1rem 0;
 }
 
@@ -325,6 +430,8 @@ header li:last-child{
 
   .subInfo{
     width: 50%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 
@@ -348,6 +455,9 @@ header li:last-child{
 /* Responsive Campus information section up to 680px */
 @media only screen and (max-width:760px){
   .campusInfo{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 95%;
     margin: 0 auto;
@@ -371,6 +481,8 @@ header li:last-child{
   }
 
   .subInfo{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
@@ -400,6 +512,9 @@ header li:last-child{
   }
 
   .subHead{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-bottom: 2.3rem;
     border: 0px;
@@ -417,42 +532,57 @@ header li:last-child{
 
 /* Catalog section */
 .learning{
+  background-image: -webkit-linear-gradient(hsl(120, 87.5%, 40.8%), hsl(120, 77.5%, 50.8%),hsl(120, 67.5%, 60.8%),hsl(144, 77.5%, 50.8%),hsl(168, 87.5%, 40.8%),hsl(192, 87.5%, 40.8%),hsl(216, 74.1%, 36.3%));
   background-image: linear-gradient(hsl(120, 87.5%, 40.8%), hsl(120, 77.5%, 50.8%),hsl(120, 67.5%, 60.8%),hsl(144, 77.5%, 50.8%),hsl(168, 87.5%, 40.8%),hsl(192, 87.5%, 40.8%),hsl(216, 74.1%, 36.3%));
 }
 
 .catalog{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 0 5.5%;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .course{
   width: 30%;
+  margin:32px 1.2%;
   margin:2rem 1.2%;
   background-color:transparent;
   border: 1px solid hsla(120,68%,38%,0.6);
 }
 
 .course h3{
+  margin-top:16px;
   margin-top:1rem;
+  font-size:32px;
   font-size: 2rem;
+  margin-bottom:8px;
   margin-bottom: 0.5rem;
 }
 
 .course span{
   display: inline-block;
+  margin:11.2px 0;
   margin:0.7rem 0;
+  font-size:17.6px;
   font-size: 1.1rem;
 }
 
 .course p{
+  font-size:19.2px;
   font-size: 1.2rem;
   line-height: 1.4;
+  margin-bottom:24px;
   margin-bottom:1.5rem;
 }
 
 .course h3,.course span,.course p{
+  margin-left:16px;
   margin-left: 1rem;
 }
 
@@ -482,54 +612,60 @@ header li:last-child{
 
 /* Responsive Catalog section up to 480px */
 @media only screen and (max-width:480px){
-
-
   .learning h1{
-  {
-      padding-bottom: 1.5rem;
-    }
-  }
-
-  .catalog{
-    border-bottom: 1px solid lightgray;
-  }
-
-  .mobileCatalog a{
-    display: block;
-    font-size: 2.3rem;
-    background-color:transparent;
-    border:3px solid hsla(0,0%,25%,0.8);
-    margin-bottom: 0.5rem;
-    padding: 1.1rem 2rem ;
-    font-weight: 600;
-    color: hsla(0,0%,0%,0.85);
-  }
-
-  .mobileCatalog a:last-child{
-    margin-bottom: 4rem;
-  }
-  .mobileCatalog a:first-child{
-    margin-top: 1rem;
+    padding-bottom: 1.5rem;
   }
 }
 
+.catalog{
+  border-bottom: 1px solid lightgray;
+}
+
+.mobileCatalog a{
+  display: block;
+  font-size:36.8px;
+  font-size: 2.3rem;
+  background-color:transparent;
+  border:3px solid hsla(0,0%,25%,0.8);
+  margin-bottom:8px;
+  margin-bottom: 0.5rem;
+  padding:17.6px 32px;
+  padding: 1.1rem 2rem ;
+  font-weight: 600;
+  color: hsla(0,0%,0%,0.85);
+}
+
+.mobileCatalog a:last-child{
+  margin-bottom:64px;
+  margin-bottom: 4rem;
+}
+.mobileCatalog a:first-child{
+  margin-top:16px;
+  margin-top: 1rem;
+}
+
+
 /* Footer section */
 footer{
+  height:80px;
   height: 5rem;
   background-color:rgb(240,240,240);
 }
 
 footer a,footer p{
   display: inline-block;
+  margin-top:16px;
   margin-top: 1rem;
 }
 
 footer a{
   float: right;
+  margin:16px 16px;
   margin: 1rem 1rem;
 }
 
 footer p{
+  margin-left:40px;
   margin-left: 2.5rem;
 }
 
