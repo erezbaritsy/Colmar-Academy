@@ -131,7 +131,7 @@ header li:last-child{
 }
 
 /* Responsive Header up to 960px */
-@media only screen and (max-width:960px){
+@media only screen and (max-width:1035px){
   .logo.remove{
     display: none;
   }
