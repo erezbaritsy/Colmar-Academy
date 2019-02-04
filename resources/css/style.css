@@ -17,32 +17,31 @@ a{
   color: black;
 }
 
+a:hover{
+  font-weight: bold;
+}
+
 p,a,span{
-  font-size:18px;
   font-size:1.125rem;
 }
 
 h1{
-  font-size:56px;
   font-size: 3.5rem;
   font-family: 'Acme', sans-serif;
 }
 
 h2{
-  font-size:38.4px;
   font-size: 2.4rem;
   font-family: 'Acme', sans-serif;
 }
 
 h3{
-  font-size:24px;
   font-size:1.5rem;
   font-family: 'Acme', sans-serif;
 }
 
 .center{
   text-align: center;
-  padding-top:32px;
   padding-top: 2rem;
 }
 
@@ -60,12 +59,11 @@ header{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height:4rem;
+  -ms-flex-align: center;
+  align-items: center;
   height:4rem;
   background-color:white;
   position: fixed;
@@ -76,7 +74,6 @@ header{
 
 header span{
   font-weight: bold;
-  font-size:27.2px;
   font-size: 1.7rem;
 }
 
@@ -95,19 +92,16 @@ header .logo{
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left:40px;
+  -ms-flex-align: center;
+  align-items: center;
   margin-left: 2.5rem;
-  height:32px;
   height:2rem;
 }
 
 header .logo img{
-  margin-right:3.2px;
   margin-right:0.2rem;
 }
 
@@ -118,19 +112,20 @@ header a{
 
 header li{
   display: inline-block;
-  margin:0 8px;
   margin:0 0.5rem;
-  width:128px;
   width: 8rem;
   background-color: rgb(0, 0, 150);
-  padding:11.2px;
   padding: 0.7rem;
   border-radius: 40px;
   text-align: center;
+  transition: all 0.1s;
+}
+
+header li:hover{
+  box-shadow:0 0 20px red, 0 0 5px darkblue;
 }
 
 header li:last-child{
-  margin-right:40px;
   margin-right: 2.5rem;
 }
 
@@ -146,8 +141,8 @@ header li:last-child{
     display: flex;
     width: 100%;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-left: 1.6rem;
     margin-right: 0.5rem;
   }
@@ -170,11 +165,11 @@ header li:last-child{
     display:-ms-flexbox;
     display:flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     margin: 0 1rem;
   }
@@ -198,7 +193,6 @@ header li:last-child{
 .imgContain {
   width: 60%;
   height: auto;
-  margin:32px 0 32px 40px;
   margin:2rem 0 2rem 2.5rem;
 }
 
@@ -214,13 +208,12 @@ header li:last-child{
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-right: 7.6%;
-  margin-left:24px;
   margin-left: 1.5rem;
 }
 
@@ -243,12 +236,15 @@ header li:last-child{
   width: 77%;
   text-align: center;
   background-color:rgb(255, 0, 0);
-  padding:16px 0;
   padding: 1rem 0;
   color:white;
   margin-top: 3vw;
-  font-size:20.8px;
   font-size: 1.3rem;
+  transition: all 0.2s;
+}
+
+.startLearn .btn:hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
 /* responsive Main Banner section up to 780px */
@@ -256,8 +252,8 @@ header li:last-child{
   .mainBanner{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .imgContain{
@@ -310,46 +306,39 @@ video section(Thesis exhibit headline) */
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 60%;
-  padding-left:40px;
   padding-left: 2.5rem;
-  padding-right:27.2px;
   padding-right: 1.7rem;
   border-right: 1px solid lightgray;
 }
 
 .subjectInfo.noBorder{
-  border-right:0px;
+  border-right:0;
 }
 
 .subjectInfo img{
   width: 100%;
   height: auto;
-  margin:32px 0;
   margin: 2rem 0;
 }
 
 .subjectInfo video{
   width: 100%;
   height: auto;
-  margin:12.8px 0;
   margin: 0.8rem 0;
 }
 
 .subjectInfo h2{
-  margin-bottom:24px;
   margin-bottom: 1.5rem;
 }
 
 .subjectInfo h3{
-  margin-bottom:16px;
   margin-bottom:1rem;
 }
 
 .subjectInfo p{
-  margin-bottom:32px;
   margin-bottom: 2rem;
 }
 
@@ -359,17 +348,14 @@ video section(Thesis exhibit headline) */
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   width: 40%;
-  margin-top:29.6px;
-  margin-top: 1.85rem;
-  margin-left:24px;
+  margin-top: 1.9rem;
   margin-left: 1.5rem;
-  margin-right:24px;
   margin-right:1.5rem;
 }
 
@@ -377,16 +363,19 @@ video section(Thesis exhibit headline) */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding:8px 0;
-  padding:0.5rem 0;
-  margin:1.6px 0;
-  margin:0.1rem 0;
-  border: 1px solid lightgray;
+  border: 1px solid white;
   color: white;
 }
 
 .subHead a{
   color: white;
+  transition: all 0.1s;
+}
+
+.subHead a:hover{
+  font-weight: bold;
+  font-size:1.175rem;
+
 }
 
 .subHead:nth-child(1){
@@ -399,10 +388,6 @@ video section(Thesis exhibit headline) */
 
 .subHead:nth-child(3){
   background-color: rgb(255, 0, 0);
-}
-
-#Orientation{
-  padding: 0;
 }
 
 .subImgCont{
@@ -422,22 +407,19 @@ video section(Thesis exhibit headline) */
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align:start;
-      -ms-flex-align:start;
-          align-items:flex-start;
-  padding-left:27.2px;
+  -ms-flex-align:start;
+  align-items:flex-start;
   padding-left:1.7rem;
-  margin-right:8px;
   margin-right: 0.5rem;
 }
 
 .subInfo p{
-  margin:16px 0;
   margin:1rem 0;
 }
 
@@ -450,8 +432,8 @@ video section(Thesis exhibit headline) */
   .subInfo{
     width: 50%;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .subHead{
@@ -476,8 +458,8 @@ video section(Thesis exhibit headline) */
   .campusInfo{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 95%;
     margin: 0 auto;
   }
@@ -485,7 +467,7 @@ video section(Thesis exhibit headline) */
   .subHeads{
     width: 100%;
     margin: 1.5rem 0;
-    padding: 0 0 0 0.3rem;
+    padding: 0 0 0 0.2rem;
   }
 
   .subImgCont{
@@ -494,14 +476,14 @@ video section(Thesis exhibit headline) */
 
   .subjectInfo{
     width:100%;
-    padding: 0 0 0 0.3rem;
-    border-right:0px;
+    padding: 0 0 0 0.2rem;
+    border-right:0;
   }
 
   .subInfo{
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -522,6 +504,14 @@ video section(Thesis exhibit headline) */
     left: 0.4rem;
   }
 
+  .subHeads{
+    padding: 0;
+  }
+
+  .subjectInfo{
+    padding: 0;
+  }
+
   .subjectInfo.removeMobile{
     display: none;
   }
@@ -533,10 +523,10 @@ video section(Thesis exhibit headline) */
   .subHead{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     margin-bottom: 2.3rem;
-    border: 0px;
+    border: 0;
   }
 
   .subImgCont{
@@ -560,10 +550,10 @@ video section(Thesis exhibit headline) */
   display: flex;
   margin: 0 5.5%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .course{
@@ -571,6 +561,15 @@ video section(Thesis exhibit headline) */
   margin:32px 1.2%;
   margin:2rem 1.2%;
   color: white;
+  transition: all 0.2s;
+}
+
+.course:nth-child(odd):hover{
+  box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.course:nth-child(even):hover{
+  box-shadow:0 0 20px red, 0 0 5px darkred;
 }
 
 .course:nth-child(odd){
@@ -582,32 +581,24 @@ video section(Thesis exhibit headline) */
 }
 
 .course h3{
-  margin-top:16px;
   margin-top:1rem;
-  font-size:32px;
   font-size: 2rem;
-  margin-bottom:8px;
   margin-bottom: 0.5rem;
 }
 
 .course span{
   display: inline-block;
-  margin:11.2px 0;
   margin:0.7rem 0;
-  font-size:17.6px;
   font-size: 1.1rem;
 }
 
 .course p{
-  font-size:19.2px;
   font-size: 1.2rem;
   line-height: 1.4;
-  margin-bottom:24px;
   margin-bottom:1.5rem;
 }
 
 .course h3,.course span,.course p{
-  margin-left:16px;
   margin-left: 1rem;
 }
 
@@ -659,11 +650,29 @@ video section(Thesis exhibit headline) */
 
   .mobileCatalog a{
     display: block;
-    font-size: 2.3rem;
+    font-size: 1.9rem;
     background-color: lightgray;
     margin-bottom: 0.5rem;
     padding: 1.1rem 2rem ;
-    border: 2px solid lightgray;
+    color:white;
+    transition: all 0.15s;
+  }
+
+  .mobileCatalog a:hover{
+    font-weight: 400;
+    opacity: 0.9;
+  }
+
+  .mobileCatalog a:nth-child(3n+1):hover{
+    box-shadow:  0 0 25px rgb(0, 0, 150);
+  }
+
+  .mobileCatalog a:nth-child(3n+2):hover{
+    box-shadow:  0 0 25px rgb(255, 0, 0);
+  }
+
+  .mobileCatalog a:nth-child(3n+3):hover{
+    box-shadow:  0 0 25px rgb(51, 102, 153);
   }
 
   .mobileCatalog a:nth-child(3n+1){
@@ -685,25 +694,21 @@ video section(Thesis exhibit headline) */
 
 /* Footer section */
 footer{
-  height:80px;
   height: 5rem;
   border-top: 1px solid lightgray;
 }
 
 footer a,footer p{
   display: inline-block;
-  margin-top:16px;
   margin-top: 1rem;
 }
 
 footer a{
   float: right;
-  margin:16px 16px;
   margin: 1rem 1rem;
 }
 
 footer p{
-  margin-left:40px;
   margin-left: 2.5rem;
 }
 
