@@ -509,6 +509,10 @@ video section(Thesis exhibit headline) */
     left: 0.4rem;
   }
 
+  .subInfo a{
+  display: block;
+  }
+
   .subHeads{
     padding: 0;
   }
